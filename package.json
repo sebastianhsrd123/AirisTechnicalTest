@@ -1,0 +1,46 @@
+{
+  "name": "airistechnicaltest",
+  "version": "1.0.0",
+  "description": "technical test by Airis",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run --test",
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "author": "Hugo Sebastian Rodriguez",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianhsrd123/AirisTechnicalTest.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node",
+    "express",
+    "jwt",
+    "test",
+    "technical",
+    "airis"
+  ],
+  "bugs": {
+    "url": "https://github.com/sebastianhsrd123/AirisTechnicalTest/issues"
+  },
+  "homepage": "https://github.com/sebastianhsrd123/AirisTechnicalTest#readme",
+  "dependencies": {
+    "@types/jsonwebtoken": "^9.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "rimraf": "^5.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}
